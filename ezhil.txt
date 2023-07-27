@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class product {
+	public static void main(String args[]) 
+	{
+		Scanner item =new Scanner(System.in);
+		int ch,qty;
+		int p1=2,p2=5,p3=6,p4=7,p5=9;
+		System.out.println("available iteams are:");
+		System.out.println("1.5001 \n2.5002 \n3.5003 \n 4.5004 \n 5.5005");
+		System.out.println("enter your choice:");
+		ch=item.nextInt();
+		System.out.println("enter your quality:");
+		qty=item.nextInt();
+		switch(ch)
+		{
+		case 1:
+			if(qty>0&&qty<5)
+				System.out.println("your total price of this item is:"+p1*qty);
+			else	
+			    System.out.println("invalid value");
+		case 2:	
+		   if(qty>0&&qty<5)
+			   System.out.println("your total price of this item is:"+p2*qty);
+		   else	
+		       System.out.println("invalid value");
+		case 3:	
+			   if(qty>0&&qty<5)
+				   System.out.println("your total price of this item is:"+p3*qty);
+			   else	
+			       System.out.println("invalid value");
+		case 4:	
+			   if(qty>0&&qty<5)
+				   System.out.println("your total price of this item is:"+p4*qty);
+			   else	
+			       System.out.println("invalid value");
+	     case 5:	
+			  if(qty>0&&qty<5)
+				  System.out.println("your total price of this item is:"+p5*qty);
+			  else	
+				 System.out.println("invalid value");
+			  break;
+			  default:
+				  System.out.println("give appropriate value");
+				  break;
+		}
+	}
+}
